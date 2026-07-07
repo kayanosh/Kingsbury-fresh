@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kingsbury Fresh Fruit &amp; Veg — locally sourced, farm-fresh fruits and vegetables delivered to your door." />
+  <title>Kingsbury Fresh Fruit &amp; Veg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true">🍏</span>
+        <span class="logo-text">Kingsbury<span>Fresh</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#delivery">Delivery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="cart-button" id="cartButton" aria-label="Open basket">
+        🧺 <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Locally sourced · Picked daily</p>
+          <h1>Farm-fresh fruit &amp; veg, straight to your kitchen</h1>
+          <p class="hero-sub">Kingsbury Fresh brings you the crispest produce from trusted local growers. Handpicked every morning, delivered to your door the same day.</p>
+          <div class="hero-actions">
+            <a href="#shop" class="btn btn-primary">Shop the market</a>
+            <a href="#delivery" class="btn btn-ghost">How delivery works</a>
+          </div>
+          <ul class="hero-badges">
+            <li>🌱 100% locally grown</li>
+            <li>🚚 Same-day delivery</li>
+            <li>♻️ Plastic-free packing</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="produce-bubble b1">🍓</div>
+          <div class="produce-bubble b2">🥕</div>
+          <div class="produce-bubble b3">🥦</div>
+          <div class="produce-bubble b4">🍋</div>
+          <div class="produce-bubble b5">🍆</div>
+          <div class="basket-emoji">🧺</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container strip-inner">
+        <span>🍎 Apples from Orchard Lane</span>
+        <span>🥬 Leafy greens picked at dawn</span>
+        <span>🍅 Vine-ripened tomatoes</span>
+        <span>🫐 Seasonal berries</span>
+        <span>🥔 Field-fresh roots</span>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Today's market</p>
+          <h2>Fresh picks of the day</h2>
+          <p class="section-sub">Everything on our stall is priced per unit or kilo and packed the moment you order.</p>
+        </div>
+
+        <div class="filters" id="filters" role="tablist" aria-label="Filter produce">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="fruit">Fruit</button>
+          <button class="filter" data-filter="veg">Vegetables</button>
+          <button class="filter" data-filter="box">Boxes</button>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-card">🚜</div>
+          <div class="about-card">🧑‍🌾</div>
+          <div class="about-card">🌾</div>
+          <div class="about-card">☀️</div>
+        </div>
+        <div class="about-content">
+          <p class="eyebrow">Our story</p>
+          <h2>A family greengrocer since 1987</h2>
+          <p>Kingsbury Fresh started as a single stall at the local weekend market. Three generations later, we still believe in the same thing: honest produce, fair prices, and a friendly face.</p>
+          <p>We work hand-in-hand with growers within 30 miles, so your fruit and veg travels less and tastes more. No cold storage for weeks on end — just proper, seasonal food.</p>
+          <ul class="stat-row">
+            <li><strong>35+</strong><span>years trading</span></li>
+            <li><strong>40+</strong><span>local farms</span></li>
+            <li><strong>12k</strong><span>happy households</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why Kingsbury</p>
+          <h2>Good food shouldn't be complicated</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature-icon">🌅</div>
+            <h3>Picked at dawn</h3>
+            <p>Produce is harvested the same morning it reaches your basket — peak flavour, peak freshness.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">💚</div>
+            <h3>Support local farms</h3>
+            <p>Every order keeps money in the community and helps small growers thrive.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">♻️</div>
+            <h3>Zero-waste packing</h3>
+            <p>Paper bags and reusable crates only. We take the crates back next time we visit.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon">💷</div>
+            <h3>Fair, honest prices</h3>
+            <p>Straight from the field means fewer middlemen and better value for you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery" id="delivery">
+      <div class="container delivery-inner">
+        <div class="delivery-content">
+          <p class="eyebrow">Delivery</p>
+          <h2>From our stall to your step</h2>
+          <ol class="steps">
+            <li><span>1</span><div><h3>Fill your basket</h3><p>Choose your fruit, veg or a ready-made box.</p></div></li>
+            <li><span>2</span><div><h3>We pack it fresh</h3><p>Your order is picked and packed by hand within the hour.</p></div></li>
+            <li><span>3</span><div><h3>Same-day drop-off</h3><p>Order before 11am for delivery the very same afternoon.</p></div></li>
+          </ol>
+        </div>
+        <div class="delivery-card">
+          <h3>Delivery zones</h3>
+          <p>Free delivery on orders over <strong>£25</strong> within Kingsbury and surrounding villages.</p>
+          <ul>
+            <li>✅ Kingsbury &amp; town centre</li>
+            <li>✅ Wingfield, Oak Row, Meadowside</li>
+            <li>✅ Riverford &amp; Hillcrest</li>
+          </ul>
+          <p class="muted">Outside these areas? Collection is always free from our shop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-content">
+          <p class="eyebrow">Say hello</p>
+          <h2>Visit us or get in touch</h2>
+          <p>Pop into the shop for a chat, or send us a message and we'll get back to you the same day.</p>
+          <ul class="contact-details">
+            <li>📍 12 Market Street, Kingsbury, KB1 4RT</li>
+            <li>📞 <a href="tel:+441234567890">01234 567 890</a></li>
+            <li>✉️ <a href="mailto:hello@kingsburyfresh.co.uk">hello@kingsburyfresh.co.uk</a></li>
+          </ul>
+          <div class="hours">
+            <h3>Opening hours</h3>
+            <p>Mon–Fri · 7am – 6pm</p>
+            <p>Saturday · 7am – 5pm</p>
+            <p>Sunday · 9am – 1pm</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">Kingsbury<span>Fresh</span></span>
+        <p>Fresh fruit &amp; veg, grown near you and picked with care.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Kingsbury Fresh Fruit &amp; Veg. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Basket drawer -->
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping basket">
+    <div class="cart-header">
+      <h2>Your basket</h2>
+      <button class="cart-close" id="cartClose" aria-label="Close basket">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">£0.00</strong></div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
