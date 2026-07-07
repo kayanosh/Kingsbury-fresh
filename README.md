@@ -5,7 +5,8 @@ selling farm-fresh fruits and vegetables with same-day delivery.
 
 ## Features
 
-- Clean, produce-inspired design with a sticky navigation and animated hero
+- Clean, produce-inspired design with real photography of the fruit &amp; veg
+- Sticky navigation and an animated hero image
 - Interactive **shop** with fruit / veg / box filters
 - A working **basket** (add, adjust quantity, running total) that persists via `localStorage`
 - Slide-out cart drawer and demo checkout flow
@@ -29,4 +30,5 @@ python3 -m http.server 8000
 index.html   # Page markup and content
 styles.css   # Styling and responsive layout
 script.js    # Products, cart, filters, nav and form logic
+images/      # Product, hero and about photos (optimised WebP)
 ```

@@ -31,7 +31,9 @@ function renderProducts(filter = "all") {
     .map(
       (p) => `
       <article class="product-card" data-cat="${p.cat}">
-        <div class="product-emoji">${p.emoji}</div>
+        <div class="product-media">
+          <img src="images/${p.id}.webp" alt="${p.name}" loading="lazy" width="600" height="600" />
+        </div>
         <div class="product-body">
           <span class="product-tag">${p.tag}</span>
           <span class="product-name">${p.name}</span>
@@ -105,7 +107,7 @@ function updateCartUI() {
       total += p.price * qty;
       return `
         <div class="cart-row">
-          <span class="emoji">${p.emoji}</span>
+          <img class="thumb" src="images/${p.id}.webp" alt="${p.name}" width="48" height="48" />
           <div class="info">
             <strong>${p.name}</strong>
             <span>£${p.price.toFixed(2)} ${p.unit}</span>
